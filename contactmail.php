@@ -38,10 +38,8 @@ $to = "saylisuhaskulkarni@gmail.com";
        $header = "MIME-Version: 1.0\r\n";
        $header .= "Content-type: text/html\r\n";
        $retval = mail ($to,$subject,$message,$header );
-       echo ("<meta http-equiv='refresh' content='2;url=contact.php'>");
-			 echo " Mail send Sucessfully";
 
-
-
+			 echo " Your mail has been sent Sucessfully";
+			 // echo ("<meta http-equiv='refresh' content='2;url=contact.php'>");
 
 ?>
