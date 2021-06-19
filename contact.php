@@ -122,8 +122,9 @@ $(document).ready(function(){
       var email = $('#email').val();
       var subject = $('#subject').val();
       var message = $('#body').val();
-      alert( message);
-
+      //alert( message);
+      if(Name != ""  || email != "" || subject != "" || message != "")
+      {
            $.ajax({
                 url:"contactmail.php",
                 method:"POST",
@@ -131,9 +132,13 @@ $(document).ready(function(){
                 success:function(data)
                 {
 
-                     $('#message').show();
+                     alert(data);
                 }
            });
+         }
+         else {
+           alert ("All fields are mandatory..");
+         }
 
  });
 });

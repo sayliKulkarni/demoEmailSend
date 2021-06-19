@@ -6,7 +6,7 @@ $msgs = $_POST['message'];
 $email = $_POST['email'];
  // echo $name;
 
-echo "Hello";
+//echo "Hello";
 // require 'credential.php';
 
 //msg body
@@ -39,7 +39,7 @@ $to = "saylisuhaskulkarni@gmail.com";
        $header .= "Content-type: text/html\r\n";
        $retval = mail ($to,$subject,$message,$header );
        echo ("<meta http-equiv='refresh' content='2;url=contact.php'>");
-			 echo ", Mail send Sucessfully";
+			 echo " Mail send Sucessfully";
 
 
 
